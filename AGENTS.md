@@ -61,6 +61,11 @@ Monorepo: `apps/backend` (Medusa v2, :9000) + `apps/storefront` (Next.js 15, :80
 - Completion gates: acceptance criteria met, backend/storefront contract consistent, migrations handled, no obvious regressions.
 - Reporting: summarize changed files, behavior impact, assumptions, and follow-up tasks.
 
+## Monorepo Maintenance
+- **Deep Cleaning**: Delete both `node_modules` and `.medusa` directories workspace-wide.
+- **OOM on Install**: If `pnpm install` OOMs, run `NODE_OPTIONS="--max_old_space_size=8192" pnpm install`.
+- **Migrations Command**: Use `medusa db:migrate` in v2 (NOT `migrations run`).
+
 ## References
 
 - [Medusa LLM Friendly Docs](https://docs.medusajs.com/llms.txt)
