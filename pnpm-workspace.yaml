@@ -9,6 +9,7 @@ overrides:
 allowBuilds:
   "@medusajs/telemetry": true
   "@swc/core": true
+  core-js: set this to true or false
   esbuild: true
   msgpackr-extract: true
   protobufjs: true

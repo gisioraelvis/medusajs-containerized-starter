@@ -28,6 +28,7 @@ Monorepo: `apps/backend` (Medusa v2, :9000) + `apps/storefront` (Next.js 15, :80
 - Subscribers/jobs export default handler + named `config`.
 - Admin customizations go in `src/admin/widgets/` or `src/admin/routes/`.
 - Keep Node16-compatible TypeScript import style.
+- Always include `@openapi` JSDoc on custom API route handlers.
 
 ## Storefront Rules (`apps/storefront/src/**`)
 
